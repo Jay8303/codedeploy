@@ -15,4 +15,8 @@ mkdir my-app
 
 # Set ownership to ec2-user
 sudo chown -R ec2-user:ec2-user /home/ec2-user/my-app
-sudo chmod -
+
+# ✅ Correct way to set permissions
+sudo chmod -R 755 /home/ec2-user/my-app
+
+echo "before_install.sh completed!"
