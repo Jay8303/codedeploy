@@ -1,0 +1,27 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/ec2-user/login-form  # Adjust this to the correct path on your EC2 instance
+
+hooks:
+  BeforeInstall:
+    - location: src/components/scripts/before_install.sh
+      timeout: 300
+      runas: ec2-user
+
+  AfterInstall:
+    - location: src/components/scripts/after_install.sh
+      timeout: 300
+      runas: ec2-user
+
+  ApplicationStart:
+    - location: src/components/scripts/application_start.sh
+      timeout: 300
+      runas: ec2-user
+
+  ApplicationStop:
+    - location: src/components/scripts/application_stop.sh
+      timeout: 300
+      runas: ec2-user
