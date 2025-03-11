@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ec2-user/login-form  # Adjust this to the correct path on your EC2 instance
+    destination: /home/ec2-user/my-app # Adjust this to the correct path on your EC2 instance
 
 hooks:
   BeforeInstall:
