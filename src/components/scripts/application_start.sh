@@ -1,6 +1,15 @@
 #!/bin/bash
-cd /home/ec2-user/my-app  # Make sure this is the correct path where files are extracted
+
+cd /home/ec2-user/my-app  # Navigate to your app directory
+
+# Install node modules
 npm install
-npm install -g serve
+
+# Install serve globally with sudo to avoid permission issues
+sudo npm install -g serve
+
+# Build React app
 npm run build
-serve -s build -l 3000  # This will serve on port 3000
+
+# Serve build (adjust port if needed)
+serve -s build -l 3000
