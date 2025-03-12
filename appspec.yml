@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: my-app
+  - source: .
     destination: /home/ec2-user/my-app # Adjust this to the correct path on your EC2 instance
 
 hooks:
