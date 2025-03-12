@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import LoginForm from './components/LoginForm/Loginform';
+import LoginForm from './components/LoginForm/LoginForm';
 import RegisterForm from './components/LoginForm/Register';
 import ForgotPassword from './components/LoginForm/ForgotPassword';
 import Home from './components/LoginForm/Home';
